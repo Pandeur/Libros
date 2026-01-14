@@ -8,6 +8,7 @@ namespace Libros
     {
         public string Nombre {  get; set; }
         public string Autor {  get; set; }
+        public int Fecha { get; set; }
         public Libro() { }
         public Libro(string nombre, string autor)
         {
