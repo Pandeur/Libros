@@ -38,7 +38,7 @@
             btnBuscar2 = new Button();
             btnContar = new Button();
             dgvContiene = new DataGridView();
-            listView1 = new ListView();
+            lvTerminaEn = new ListView();
             ((System.ComponentModel.ISupportInitialize)dgvContiene).BeginInit();
             SuspendLayout();
             // 
@@ -102,12 +102,13 @@
             // 
             // btnBuscar2
             // 
-            btnBuscar2.Location = new Point(325, 97);
+            btnBuscar2.Location = new Point(316, 97);
             btnBuscar2.Name = "btnBuscar2";
             btnBuscar2.Size = new Size(91, 24);
             btnBuscar2.TabIndex = 7;
             btnBuscar2.Text = "Buscar";
             btnBuscar2.UseVisualStyleBackColor = true;
+            btnBuscar2.Click += btnBuscar2_Click;
             // 
             // btnContar
             // 
@@ -126,20 +127,20 @@
             dgvContiene.Size = new Size(146, 52);
             dgvContiene.TabIndex = 9;
             // 
-            // listView1
+            // lvTerminaEn
             // 
-            listView1.Location = new Point(290, 148);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(137, 52);
-            listView1.TabIndex = 10;
-            listView1.UseCompatibleStateImageBehavior = false;
+            lvTerminaEn.Location = new Point(290, 148);
+            lvTerminaEn.Name = "lvTerminaEn";
+            lvTerminaEn.Size = new Size(137, 52);
+            lvTerminaEn.TabIndex = 10;
+            lvTerminaEn.UseCompatibleStateImageBehavior = false;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(listView1);
+            Controls.Add(lvTerminaEn);
             Controls.Add(dgvContiene);
             Controls.Add(btnContar);
             Controls.Add(btnBuscar2);
@@ -169,6 +170,6 @@
         private Button btnBuscar2;
         private Button btnContar;
         private DataGridView dgvContiene;
-        private ListView listView1;
+        private ListView lvTerminaEn;
     }
 }
