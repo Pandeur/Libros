@@ -16,5 +16,15 @@ namespace Libros
         {
 
         }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TipoCuadro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

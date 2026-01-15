@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            textBox1 = new TextBox();
+            LibroName = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            textBox2 = new TextBox();
+            this.AutorCuadro = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            TipoCuadro = new TextBox();
             linkLabel1 = new LinkLabel();
             dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -42,23 +42,26 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Lime;
             button1.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.FromArgb(0, 64, 0);
             button1.ImageAlign = ContentAlignment.TopCenter;
             button1.Location = new Point(175, 237);
             button1.Name = "button1";
+            button1.RightToLeft = RightToLeft.Yes;
             button1.Size = new Size(136, 50);
             button1.TabIndex = 0;
             button1.Text = "GUARDAR P";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // textBox1
+            // LibroName
             // 
-            textBox1.Location = new Point(175, 94);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(136, 23);
-            textBox1.TabIndex = 0;
+            LibroName.Location = new Point(175, 94);
+            LibroName.Name = "LibroName";
+            LibroName.Size = new Size(136, 23);
+            LibroName.TabIndex = 0;
+            LibroName.TextChanged += textBox1_TextChanged_1;
             // 
             // label1
             // 
@@ -80,12 +83,12 @@
             label2.TabIndex = 2;
             label2.Text = "Autor";
             // 
-            // textBox2
+            // AutorCuadro
             // 
-            textBox2.Location = new Point(175, 150);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(136, 23);
-            textBox2.TabIndex = 3;
+            this.AutorCuadro.Location = new Point(175, 150);
+            this.AutorCuadro.Name = "AutorCuadro";
+            this.AutorCuadro.Size = new Size(136, 23);
+            this.AutorCuadro.TabIndex = 3;
             // 
             // label3
             // 
@@ -97,12 +100,13 @@
             label3.TabIndex = 4;
             label3.Text = "Tipo";
             // 
-            // textBox3
+            // TipoCuadro
             // 
-            textBox3.Location = new Point(175, 197);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(136, 23);
-            textBox3.TabIndex = 5;
+            TipoCuadro.Location = new Point(175, 197);
+            TipoCuadro.Name = "TipoCuadro";
+            TipoCuadro.Size = new Size(136, 23);
+            TipoCuadro.TabIndex = 5;
+            TipoCuadro.TextChanged += TipoCuadro_TextChanged;
             // 
             // linkLabel1
             // 
@@ -119,7 +123,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(482, 125);
+            dataGridView1.Location = new Point(441, 125);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(240, 150);
             dataGridView1.TabIndex = 7;
@@ -131,12 +135,12 @@
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
             Controls.Add(linkLabel1);
-            Controls.Add(textBox3);
+            Controls.Add(TipoCuadro);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(this.AutorCuadro);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(LibroName);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
@@ -148,12 +152,12 @@
         #endregion
 
         private Button button1;
-        private TextBox textBox1;
+        private TextBox LibroName;
         private Label label1;
         private Label label2;
         private TextBox textBox2;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox TipoCuadro;
         private LinkLabel linkLabel1;
         private DataGridView dataGridView1;
     }
