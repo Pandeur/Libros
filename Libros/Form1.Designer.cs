@@ -32,7 +32,6 @@
             LibroName = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            this.AutorCuadro = new TextBox();
             label3 = new Label();
             TipoCuadro = new TextBox();
             linkLabel1 = new LinkLabel();
