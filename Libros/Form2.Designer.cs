@@ -153,7 +153,6 @@
             Controls.Add(btnBuscar);
             Name = "Form2";
             Text = "Form2";
-            Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)dgvContiene).EndInit();
             ResumeLayout(false);
             PerformLayout();
