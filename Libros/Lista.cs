@@ -35,5 +35,17 @@ namespace Libros
             }
             return aux;
         }
+        public int ContarTipo(string cadena)
+        {
+            int aux = 0;
+            foreach(Libro librito in MisLibros)
+            {
+                if(librito.Nombre==cadena)
+                {
+                    aux++;
+                }
+            }
+            return aux;
+        }
     }
 }

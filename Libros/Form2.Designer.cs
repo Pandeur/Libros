@@ -129,7 +129,7 @@
             // 
             // lvTerminaEn
             // 
-            lvTerminaEn.Location = new Point(290, 148);
+            lvTerminaEn.Location = new Point(299, 148);
             lvTerminaEn.Name = "lvTerminaEn";
             lvTerminaEn.Size = new Size(137, 52);
             lvTerminaEn.TabIndex = 10;
