@@ -37,9 +37,9 @@
             txtTipo = new TextBox();
             btnBuscar2 = new Button();
             btnContar = new Button();
-            dataGridView1 = new DataGridView();
+            dgvContiene = new DataGridView();
             listView1 = new ListView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvContiene).BeginInit();
             SuspendLayout();
             // 
             // btnBuscar
@@ -50,6 +50,7 @@
             btnBuscar.TabIndex = 0;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // txtTitulo
             // 
@@ -117,17 +118,17 @@
             btnContar.Text = "Contar";
             btnContar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvContiene
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(78, 148);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(146, 52);
-            dataGridView1.TabIndex = 9;
+            dgvContiene.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvContiene.Location = new Point(78, 148);
+            dgvContiene.Name = "dgvContiene";
+            dgvContiene.Size = new Size(146, 52);
+            dgvContiene.TabIndex = 9;
             // 
             // listView1
             // 
-            listView1.Location = new Point(307, 148);
+            listView1.Location = new Point(290, 148);
             listView1.Name = "listView1";
             listView1.Size = new Size(137, 52);
             listView1.TabIndex = 10;
@@ -139,7 +140,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(listView1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvContiene);
             Controls.Add(btnContar);
             Controls.Add(btnBuscar2);
             Controls.Add(txtTipo);
@@ -151,7 +152,7 @@
             Controls.Add(btnBuscar);
             Name = "Form2";
             Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvContiene).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,7 +168,7 @@
         private TextBox txtTipo;
         private Button btnBuscar2;
         private Button btnContar;
-        private DataGridView dataGridView1;
+        private DataGridView dgvContiene;
         private ListView listView1;
     }
 }
