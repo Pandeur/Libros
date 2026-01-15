@@ -20,11 +20,9 @@ namespace Libros
             dgvContiene.DataSource = Libros.Titulo(txtTitulo.Text);
         }
 
-        private void btnBuscar2_Click(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
-            Libro aux = new Libro();
-            aux = Libros.AutorFin(txtAutor.Text);
-            lvTerminaEn.Items.Add(aux.Autor);
+
         }
     }
 }

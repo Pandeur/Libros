@@ -36,6 +36,8 @@
             textBox3 = new TextBox();
             button1 = new Button();
             dataGridView1 = new DataGridView();
+            button2 = new Button();
+            linkLabel1 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -92,12 +94,13 @@
             // 
             // button1
             // 
-            button1.Location = new Point(302, 279);
+            button1.Location = new Point(220, 279);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 6;
             button1.Text = "Guardar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // dataGridView1
             // 
@@ -107,11 +110,34 @@
             dataGridView1.Size = new Size(240, 150);
             dataGridView1.TabIndex = 7;
             // 
+            // button2
+            // 
+            button2.Location = new Point(381, 279);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 8;
+            button2.Text = "Mostrar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(589, 347);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(56, 15);
+            linkLabel1.TabIndex = 9;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Siguiente";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(linkLabel1);
+            Controls.Add(button2);
             Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(textBox3);
@@ -137,5 +163,7 @@
         private TextBox textBox3;
         private Button button1;
         private DataGridView dataGridView1;
+        private Button button2;
+        private LinkLabel linkLabel1;
     }
 }
