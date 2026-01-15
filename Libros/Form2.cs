@@ -26,5 +26,20 @@ namespace Libros
             aux = Libros.AutorFin(txtAutor.Text);
             lvTerminaEn.Items.Add(aux.Autor);
         }
+
+        private void lvTerminaEn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnContar_Click(object sender, EventArgs e)
+        {
+            int aux = 0;
+            string aux1;
+            aux = Libros.ContarTipo(txtTipo.Text);
+            aux1=Convert.ToString(aux);
+
+            MessageBox.Show(aux1);
+        }
     }
 }

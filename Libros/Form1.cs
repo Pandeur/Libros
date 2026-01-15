@@ -44,7 +44,7 @@ namespace Libros
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = listaLibros.MisLibros;
         }
         public void Limpiar()
         {
@@ -55,8 +55,13 @@ namespace Libros
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 form2= new Form2();
+            Form2 form2 = new Form2();
             form2.Show();
+            form2.Libros = listaLibros;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

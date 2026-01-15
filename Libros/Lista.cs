@@ -20,7 +20,7 @@ namespace Libros
             List<Libro> lista = new List<Libro>();
             foreach (Libro libro in MisLibros)
             {
-                if (libro.Nombre.EndsWith(cadena))
+                if (libro.Nombre.Contains(cadena))
                     lista.Add(libro);
             }
             return lista;
@@ -40,7 +40,7 @@ namespace Libros
             int aux = 0;
             foreach(Libro librito in MisLibros)
             {
-                if(librito.Nombre==cadena)
+                if((librito.Tipo)==cadena)
                 {
                     aux++;
                 }

@@ -118,22 +118,24 @@
             btnContar.TabIndex = 8;
             btnContar.Text = "Contar";
             btnContar.UseVisualStyleBackColor = true;
+            btnContar.Click += btnContar_Click;
             // 
             // dgvContiene
             // 
             dgvContiene.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvContiene.Location = new Point(78, 148);
+            dgvContiene.Location = new Point(42, 148);
             dgvContiene.Name = "dgvContiene";
-            dgvContiene.Size = new Size(146, 52);
+            dgvContiene.Size = new Size(196, 104);
             dgvContiene.TabIndex = 9;
             // 
             // lvTerminaEn
             // 
-            lvTerminaEn.Location = new Point(299, 148);
+            lvTerminaEn.Location = new Point(271, 148);
             lvTerminaEn.Name = "lvTerminaEn";
-            lvTerminaEn.Size = new Size(137, 52);
+            lvTerminaEn.Size = new Size(198, 104);
             lvTerminaEn.TabIndex = 10;
             lvTerminaEn.UseCompatibleStateImageBehavior = false;
+            lvTerminaEn.SelectedIndexChanged += lvTerminaEn_SelectedIndexChanged;
             // 
             // Form2
             // 
