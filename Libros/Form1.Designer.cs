@@ -42,11 +42,14 @@
             // 
             // button1
             // 
-            button1.Location = new Point(97, 241);
+            button1.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ImageAlign = ContentAlignment.TopCenter;
+            button1.Location = new Point(175, 237);
             button1.Name = "button1";
-            button1.Size = new Size(214, 72);
+            button1.Size = new Size(136, 50);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "GUARDAR P";
+            button1.TextAlign = ContentAlignment.MiddleRight;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -60,18 +63,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(61, 102);
+            label1.Font = new Font("Impact", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(37, 94);
             label1.Name = "label1";
-            label1.Size = new Size(97, 15);
+            label1.Size = new Size(140, 23);
             label1.TabIndex = 1;
             label1.Text = "Nombre del libro";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(75, 158);
+            label2.Font = new Font("Impact", 14.25F);
+            label2.Location = new Point(107, 150);
             label2.Name = "label2";
-            label2.Size = new Size(37, 15);
+            label2.Size = new Size(52, 23);
             label2.TabIndex = 2;
             label2.Text = "Autor";
             // 
@@ -85,9 +90,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(77, 200);
+            label3.Font = new Font("Impact", 14.25F);
+            label3.Location = new Point(115, 197);
             label3.Name = "label3";
-            label3.Size = new Size(31, 15);
+            label3.Size = new Size(44, 23);
             label3.TabIndex = 4;
             label3.Text = "Tipo";
             // 
@@ -101,6 +107,8 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.FromArgb(255, 128, 128);
+            linkLabel1.LinkColor = Color.Black;
             linkLabel1.Location = new Point(592, 85);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(56, 15);
